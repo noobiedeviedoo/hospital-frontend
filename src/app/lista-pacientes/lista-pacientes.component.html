@@ -3,6 +3,10 @@
     <thead class="table-dark">
         <tr>
             <th>Id</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Hombre</th>
+            <th>Mujer</th>
             <th>N. Seguridad Social</th>
             <th>Edad</th>
             <th>Población</th>
@@ -14,6 +18,10 @@
 
         <tr *ngFor="let paciente of pacientes">
             <td>{{paciente.id_paciente}}</td>
+            <td>{{paciente.nombre}}</td>
+            <td>{{paciente.apellidos}}</td>
+            <td>{{paciente.hombre}}</td>
+            <td>{{paciente.mujer}}</td>
             <td>{{paciente.nss}}</td>
             <td>{{paciente.edad}}</td>
             <td>{{paciente.poblacion}}</td>

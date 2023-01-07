@@ -1,6 +1,10 @@
 export class Paciente {
     id_paciente:number;
     id_persona:number;
+    nombre:string;
+    apellidos:string;
+    hombre:number;
+    mujer:number;
     nss:number;
     edad:number;
     domicilio:string;
