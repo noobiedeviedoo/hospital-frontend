@@ -4,14 +4,23 @@
     <thead class="table-dark">
         <tr>
             <th>Id medico</th>
-            <th>especialidad</th>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Hombre</th>
+            <th>Mujer</th>
+            <th>Especialidad</th>
             <th>Numero de colegiado</th>
             <th>Cargo</th>
+
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let medico of medicos">
             <td>{{medico.id_medico}}</td>
+            <td>{{medico.nombre}}</td>
+            <td>{{medico.apellidos}}</td>
+            <td>{{medico.hombre}}</td>
+            <td>{{medico.mujer}}</td>
             <td>{{medico.especialidad}}</td>
             <td>{{medico.num_colegiado}}</td>
             <td>{{medico.cargo}}</td>

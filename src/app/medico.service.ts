@@ -8,12 +8,16 @@ import { Medico } from './medico';
 })
 export class MedicoService {
 
-  private dataURL = "http://localhost:8080/api/medi/show";
+  private getall = "http://localhost:8080/api/medi/show";
 
+  private getOne = "http://localhost:8080/api/medi/one";
   constructor(private httpClient: HttpClient) { }
 
   getListMedicos():Observable<Medico[]>{
-      return this.httpClient.get<Medico[]>(`${this.dataURL}`)
+      return this.httpClient.get<Medico[]>(`${this.getall}`)
   }
 
+  getMedico():Observable<Medico>{
+    return this.httpClient.get<Medico>(`${this.getOne}`)
+}
 }

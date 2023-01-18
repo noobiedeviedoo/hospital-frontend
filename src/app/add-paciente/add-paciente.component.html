@@ -1,0 +1,63 @@
+<!-- Nombre, Apellidos, hombre, mujer, nss, domicilio, poblacion, provincia, codigo postal,telefono
+    los IDs se pondrán automáticamente-->
+
+<form>
+  <div class="row">
+    <div class="col">
+      <input type="text"
+        class="form-control"
+        placeholder="Nombre"
+        id="inputNombre" />
+    </div>
+    <div class="col">
+      <input type="text"
+        class="form-control"
+        placeholder="Apellidos"
+        id="inputApellidos"/>
+    </div>
+  </div>
+  <div class="form-check-inline">
+    <input class="form-check-input"
+      type="radio"
+      name="inlineRadioOptions"
+      id="bRadioHombre"
+      value="Hombre"
+      style="margin-top: 5px;" />
+    <label class="form-check-label" for="inlineRadio1">Hombre</label>
+  </div>
+  <div class="form-check-inline">
+    <input class="form-check-input"
+      type="radio"
+      name="inlineRadioOptions"
+      id="bRadioMujer"
+      value="Mujer"
+      style="margin-top: 5px;" />
+    <label class="form-check-label" for="inlineRadio2">Mujer</label>
+  </div>
+
+  <div class="form-group">
+    <label for="inputAddress">Domicilio</label>
+    <input type="text"
+      class="form-control"
+      id="inputAddress"
+      placeholder="Calle, Numero, Bloque, Portal..." />
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Municipio</label>
+      <input type="text" class="form-control" id="inputMunicipio" />
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputCity">Provincia</label>
+      <input type="text" class="form-control" id="inputProvincia" />
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck" />
+      <label class="form-check-label" for="gridCheck"> Check me out </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Añadir</button>
+</form>
